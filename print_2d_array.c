@@ -61,10 +61,12 @@ int main(void)
 			printf("Element [%d][%d]: ", i, j);
 			if (scanf("%d", &array[i][j]) != 1)
 			{
+				int k;
+
 				fprintf(stderr, "Error: Invalid input\n");
 				/* Free allocated memory */
-				for (i = 0; i < rows; i++)
-					free(array[i]);
+				for (k = 0; k < rows; k++)
+					free(array[k]);
 				free(array);
 				return (1);
 			}
