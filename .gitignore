@@ -1,0 +1,10 @@
+# Compiled binaries
+print_2d_array
+*.o
+*.out
+a.out
+
+# Temporary files
+*~
+*.swp
+*.swo
