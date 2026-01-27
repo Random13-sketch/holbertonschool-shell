@@ -12,7 +12,7 @@
  */
 int main(void)
 {
-	int rows, cols, i, j;
+	int rows, cols, i, j, k;
 	int **array;
 
 	/* Get array dimensions from user */
@@ -61,8 +61,6 @@ int main(void)
 			printf("Element [%d][%d]: ", i, j);
 			if (scanf("%d", &array[i][j]) != 1)
 			{
-				int k;
-
 				fprintf(stderr, "Error: Invalid input\n");
 				/* Free allocated memory */
 				for (k = 0; k < rows; k++)
